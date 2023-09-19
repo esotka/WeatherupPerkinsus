@@ -2,20 +2,14 @@
 
 library(pegas)
 rm(list=ls())
-meta <- read.csv('./meta_36ind_final.csv')
+meta <- read.csv('data/meta_36ind_final.csv')
 # check meta$file==rownames(gprob) ALL TRUE
-gprob<- read.table('./virginica_36ind/cvirg_36ind_52458snp.mpgl.txt')
+gprob<- t(read.table('data/cvir_36ind.52100snp.gt.noNAs.txt'))
 rownames(gprob) = meta$file
 ids <- rownames(gprob) 
 pop <- factor(paste(meta$state,meta$VA_reg))
 reg <- factor(meta$reg)
 st.d <- dist(gprob)## distances between rows
-print(m1 <- amova(st.d ~ reg/pop,nperm=1000))
-sig2 <- setNames(m1$varcomp$sigma2,rownames(m1$varcomp))
-print(getPhi(sig2))
-print(m1 <- amova(st.d ~ reg,nperm=1000))
-sig2 <- setNames(m1$varcomp$sigma2,rownames(m1$varcomp))
-print(getPhi(sig2))
 print(m1 <- amova(st.d ~ pop,nperm=1000))
 sig2 <- setNames(m1$varcomp$sigma2,rownames(m1$varcomp))
 print(getPhi(sig2))
