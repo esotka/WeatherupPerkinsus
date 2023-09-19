@@ -1,5 +1,0 @@
-new("snmfClass", directory = "K3/run8/", snmfClass.file = "virg.str_r8.3.snmfClass", 
-    K = 3L, run = 8L, CPU = 1L, seed = 699298520L, alpha = 10, 
-    percentage = 0.05, I = 0L, iterations = 200L, entropy = TRUE, 
-    tolerance = 0.00001, crossEntropy = 0.392960295187233, ploidy = 2L, 
-    Q.input.file = "", Q.output.file = "virg.str_r8.3.Q", G.output.file = "virg.str_r8.3.G")
