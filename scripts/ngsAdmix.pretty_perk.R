@@ -8,11 +8,11 @@ state_reg_ordered = state_reg[order(state_reg)]
 
 kcol <- c("black", #1
           "red",#2
-          "darkgreen",#3
+          "yellow",#3
           "gainsboro",#4
           "brown",#5
           "deepskyblue",#6
-          "yellow",#7
+          "darkgreen",#7
           "dodgerblue4",#8
           "darkorchid",#9
           "burlywood")##10
@@ -28,7 +28,7 @@ colorder <- list(
   c(9,1,2,8,4,6,5,7,10,3)) #ks=10
 
 pdf('output/ngsAdmix.pretty.pdf',width=5,height=4)
-par(mfrow=c(11,1),mar=c(0,0,0,0),xpd = TRUE)
+par(mfrow=c(11,1),mar=c(.2,0,0,0),xpd = TRUE)
 
 for (k in 1:length(ks))
 {

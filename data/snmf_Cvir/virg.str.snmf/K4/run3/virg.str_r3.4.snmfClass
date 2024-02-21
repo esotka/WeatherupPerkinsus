@@ -1,0 +1,5 @@
+new("snmfClass", directory = "K4/run3/", snmfClass.file = "virg.str_r3.4.snmfClass", 
+    K = 4L, run = 3L, CPU = 1L, seed = 536659317L, alpha = 10, 
+    percentage = 0.05, I = 0L, iterations = 200L, entropy = TRUE, 
+    tolerance = 0.00001, crossEntropy = 0.416850350518529, ploidy = 2L, 
+    Q.input.file = "", Q.output.file = "virg.str_r3.4.Q", G.output.file = "virg.str_r3.4.G")
